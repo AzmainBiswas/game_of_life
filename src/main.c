@@ -18,7 +18,7 @@
 #include "../include/array.h"
 #include <raylib.h>
 
-#define FPS 24
+#define FPS 60
 
 // setting some variable
 const int cell_size = 4;

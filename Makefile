@@ -1,5 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+OPT=-O3
+CFLAGS = -Wall -Wextra -pedantic -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 $(OPT)
 INCLUDE = ./include/
 PROGRAM_NAME = game_of_life
 
