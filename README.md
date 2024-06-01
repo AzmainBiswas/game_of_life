@@ -5,5 +5,3 @@
 
  ## How to Build
  clone the repo and run `make run` to build and run the program.
-
-**NOTE:** I have run it only in linux(pop_os 22.04LTS).  

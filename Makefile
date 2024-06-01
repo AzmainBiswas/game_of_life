@@ -9,9 +9,14 @@ LDFLAGS = -L$(RAYLIB_LIB) -Wl,-rpath=$(RAYLIB_LIB) -lraylib -lGL -lm -lpthread -
 
 OBJ = obj/main.o obj/array.o
 
+all: $(PROGRAM_NAME)
+
+obj/:
+	mkdir obj
+
 all: game_of_life
 
-obj/%.o: src/%.c 
+obj/%.o: src/%.c obj/
 	$(CC) -c $< $(CFLAGS) -o $@ 
 
 $(PROGRAM_NAME): $(OBJ) 
