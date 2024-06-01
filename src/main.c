@@ -18,7 +18,7 @@
 #include "../include/array.h"
 #include <raylib.h>
 
-#define FPS 60
+#define FPS 10
 
 // setting some variable
 const int cell_size = 4;
@@ -26,8 +26,8 @@ const int cell_size = 4;
 // const int rows = 150;    // rows
 // const int columns = 150; // width
 
-const int rows = 720;    // rows
-const int columns = 480; // width
+const int rows = 1080;    // rows
+const int columns = 720; // width
 
 const int screen_width = (columns - 1) * cell_size;
 const int screen_hight = (rows - 1) * cell_size;
